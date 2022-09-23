@@ -1,0 +1,389 @@
+{% load static %}
+<html>
+<head>
+
+
+<title>My Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Onepage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css'/>
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />	    
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+	<style>
+		.header{
+			background: url("{% static 'images/banner.jpg' %}") no-repeat center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			background-position: center;
+			background-size:cover;
+			min-height: 550px;
+		}
+		body{
+			padding:0 0;
+			margin:0 0; 
+			font-family: 'Open Sans', sans-serif;
+			background-color: white;
+		}
+	</style>
+</head>
+<body>
+<div class="header" id="head">	
+      <div class="container"> 
+         <div class="header-top">
+      		 <div class="logo">
+				<a href=""><img style="border: 1px solid white; border-radius: 5px" width="200" height="120" src="{% static 'images/ah.png' %}" alt=""/></a>
+			 </div>
+		   <div class="top-menu">
+		   	<span class="menu"> </span>
+			<ul>
+			 	<nav class="cl-effect-5">
+				<li><a class="active" href="index.html"><span data-hover="Home">home</span></a></li>
+				<li><a href="#about" class="scroll"><span data-hover="about">about</span></a></li>
+				<li><a href="#projects" class="scroll"><span data-hover="projects">Projects</span></a></li>
+				<li><a href="#contact" class="scroll"><span data-hover="contact">contact</span></a></li>
+				</nav>
+			 </ul>
+			 </div>
+			 <!--script-nav-->
+		 <script>
+		 $("span.menu").click(function(){
+		 $(".top-menu ul").slideToggle("slow" , function(){
+		 });
+		 });
+		 </script>
+			<div class="clearfix"></div>
+		 </div>  
+		  <div class="index-banner">
+       	   <div class="wmuSlider example1">
+			   <div class="wmuSliderWrapper">
+				   <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   	<div class="banner-wrap">
+				   	       	<div class="banner_center">
+				   		 		<h1>hello all,</h1> 
+				   		 		<h2>i am <span>backend developer & junoir full-stack</span></h2>
+				   		 		<h2>from egypt</h2>
+				   		 		</div>
+				   		 </div>
+					</article>
+				   <article style="position: relative; width: 100%; opacity: 1;"> 
+				   	   	<div class="banner-wrap">
+				   	      <div class="banner_center">
+				   		 		<h1>My Projects here, </h1> 
+				   		 		<h2>See <span>Web-pages &  development</span></h2>
+				   		 		<h2>commentary</h2>
+				   		 		</div>
+				   		  </div>
+				   </article>
+				   <article style="position: absolute; width: 100%; opacity: 0;">
+				   	  	<div class="banner-wrap">
+				   	       <div class="banner_center">
+				   		 		<h1>Hope you like this ,</h1> 
+				   		 		<h2>Contrary to <span>&  developer</span></h2>
+				   		 		<h2>reproduced below</h2>
+				   		 		</div>
+				   		 </div>
+					 </article>
+				 </div>
+				
+            </div>
+            <script src="{% static 'js/jquery.wmuSlider.js' %}"></script> 
+			  <script>
+       			$('.example1').wmuSlider();         
+   		     </script> 	           	      
+      </div>
+	 </div>     
+	</div>
+	<div class="content">
+		<div class="about-section" id="about" id="about">
+	<div class="container">
+		<div class="about-header">
+			<h3>about</h3>
+			<br>
+			<h4>Hi i'm <h3 style="font-size: 25px; font-weight: 700;">Ahmed Fathi Mohammed</h3></h4>
+
+			<div class="about-imag">
+				<a href="{% static 'images/ahmed.jpg' %}"><img width="230" src="{% static 'images/ahmed.jpg' %}" alt=""/></a>
+			</div>
+			<div class="about-text">
+				<h5 style="font-size: 20px;">I love coding, doing research and collaborating</h5>
+				<br>
+				<h4>My First Job as a Developer</h4>
+				<hr>
+				<h5 style="font-size: 20px;">3 months after writing my first Hello World program on November 8th 2020 (While working in my home).	
+				<h5 style="font-size: 20px;">Before I knew it we transitioned from the old system and we're on to mine. My newbie self was now in charge of hosting hundreds of thousands of lab samples and supporting hundreds of clients.</h5>
+
+				<h5 style="font-size: 20px;">From this you’ll see that I’m someone that jumps before I can talk myself out of doing something scary.</h5>
+				<h5 style="font-size: 20px;">It’s been a wild ride and I’m excited to see what’s next.</h5>
+
+				<h5 style="font-size: 20px;">Thanks for reading!</h5>
+				
+			</div>
+			<div class="clearfix"></div>
+			</div>
+			<div class="about-sectiongrids">
+				<div class="col-md-6 about-leftgrid">
+					<div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>Agile Technology</h4>
+						</div>
+						<div class="percentage">
+							<p>65%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:65%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>Ui/Ux</h4>
+						</div>
+						<div class="percentage">
+							<p>50%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:50%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>Software engineering tools</h4>
+						</div>
+						<div class="percentage">
+							<p>75%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>Html/Css</h4>
+						</div>
+						<div class="percentage">
+							<p>95%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:95%"> </div>
+	                      </div>
+	                      </div>
+						  <div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>Integrated Apps</h4>
+								</div>
+								<div class="percentage">
+									<p>80%</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="skills">
+									  <div style="width:80%"> </div>
+								  </div>
+								  </div>
+
+	</div>
+	<div class="col-md-6 about-rightgrid">
+		<div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>web design</h4>
+						</div>
+						<div class="percentage">
+							<p>75%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>Front-end libraries</h4>
+						</div>
+						<div class="percentage">
+							<p>50%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:50%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>Backend services</h4>
+						</div>
+						<div class="percentage">
+							<p>85%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:85%"> </div>
+	                      </div>
+	                      </div>
+				<div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>Create API's</h4>
+						</div>
+						<div class="percentage">
+							<p>90%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+								<div style="width:90%"> </div>
+							</div>
+							</div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>Jquery</h4>
+						</div>
+						<div class="percentage">
+							<p>50%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:50%"> </div>
+	                      </div>
+	                      </div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="arrow1">
+	<a href="#work" class="scroll"><img src="{% static 'images/arrow1.png' %}" alt=""/></a>
+					</div>
+	</div>
+	</div>
+	<!-- about-section-ends -->
+	<div class="services-section" id="services">
+			<div class="container"> 
+			<div class="services-header">
+				<h3>Projects</h3>
+				<br>
+					<h4>What I did?</h4>
+					<hr>
+					<h5>Python-Django projects for begginers, HTML/CSS Templates, JavaScript/Jquery codes, Postgres database connections, AWS and APIs such as google maps creation, and a whole bunch more I can’t possibly mention in one sentence!</h5>
+					<hr>
+					<h6>PS: Working on Machine Learning.</h6>
+					<br>
+			</div>
+			<div class="services-sectiongrids">
+				<div class="col-md-4 services-grid">
+					<a href=""><img width="200" src="{% static 'images/R.png' %}" alt=""/></a>
+					<h4>CRM Management system</h4>
+					<p style="font-weight: 500; font-size: 18px;">This site is very cool and I was able to add most of the things I learned in Django as it represents two sides one for the client and the other for the admin. </p>
+					<p style="font-weight: 500; font-size: 18px;">You can visit it on gitHub from <a href="https://github.com/AhmedFathyMohamed10/CRM_system-Django" target="target_blank">Here</a></p>
+				</div>
+				<div class="col-md-4 services-grid">
+					<br>
+					<br>
+					<a href=""><img width="250" style="border-radius: 10px;" src="{% static 'images/R.jpg' %}" alt=""/></a>
+					<h4>Wide commerce app</h4>
+					<p style="font-weight: 500; font-size: 18px;">This site is for e-commerce i concat between JavaScript and django in many things, conatains Analysis. </p>
+					<p style="font-weight: 500; font-size: 18px;">You can visit it on gitHub from <a  href="https://github.com/AhmedFathyMohamed10/widecommerce" target="target_blank">Here</a></p>
+				</div>
+				<div class="col-md-4 services-grid">
+					<br>
+					<a target="target_blank" href="https://github.com/AhmedFathyMohamed10/todoProject_Django"><img width="250" style="border-radius: 10px;" src="{% static 'images/P.png' %}" alt=""/></a>
+					<h4>Todo website</h4>
+					<p style="font-weight: 500; font-size: 18px;">This is a todo website for recording tasks to do.</p>
+					<p style="font-weight: 500; font-size: 18px;">You can visit it on gitHub from <a href="https://github.com/AhmedFathyMohamed10/todoProject_Django" target="target_blank">Here</a></p>
+				</div>
+
+				<div class="clearfix"></div>
+				<div class="arrow1">
+					<hr>
+				<p style="font-size: 18px">After almost two years of working as a developer, I’ve learned a lot about what I want to do and what I don’t want to do. I’ve learned that I want to work on projects that are meaningful and that I can be proud of. I want to work on projects that are going to make a difference.</p>
+				<br>
+				<br>
+					<p style="font-size: 17px">There are more you can visit <a style="font-size: 20px; color: blue;" href="https://github.com/AhmedFathyMohamed10">my github now</a>
+						<br>
+						<br>
+					<a href="#contact" class="scroll" ><img src="{% static 'images/arrow1.png' %}" alt=""/></a>
+					</div>
+		</div>
+		</div>
+		</div>
+		<!-- services-section-ends -->
+	</div>
+	<div class="footer-section" id="contact" id="contact">
+			<div class="container"> 
+			<div class="contact-header">
+				<h3> contact</h3>
+					<p>This links you can visit me there, and i will be stay to get in touch </p>
+			</div>
+			<div class="social-icon">
+				<a href="#"><i class="icon1"></i></a>
+				<a href="https://www.facebook.com/ahmedfathhy011/"><i class="icon2"></i></a>
+				<a href="ahmedfathhy011@gmail.com"><i class="icon3"></i></a>
+				<a href="#"><i class="icon4"></i></a>
+				<a href="#"><i class="icon5"></i></a>
+				<a href="#"><i class="icon6"></i></a>
+				<a href="#"><i class="icon7"></i></a>
+				<a href="#"><i class="icon8"></i></a>
+			</div>
+			
+			<div class="footer-bottom">
+
+					<p>&copy; 2022 Onepage . All rights  Reserved <a href="https://www.linkedin.com/in/ahmed-fathy-0b964520a/" target="target_blank">| Linked In me</a></p>
+
+					</div>
+					<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
+
+		</div>		
+	</div>
+	
+	
+</body>
+</html>
